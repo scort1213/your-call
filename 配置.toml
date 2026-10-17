@@ -1,0 +1,16 @@
+# your-call 的配置。改设置只改这里。
+"判断库" = "~/Documents/个人判断"   # 判断库的唯一源头。放在 Obsidian 库里也行，例如 "~/Documents/Obsidian Vault/个人判断"
+"一页纸上限字符" = 3000
+
+["发布"]
+# 各家 Agent 每次开工都会读的全局规则文件。按需增删。
+# Claude Code 读 ~/.claude/CLAUDE.md；Codex 读 ~/.codex/AGENTS.md；Grok Build 按文档会兼容读 ~/.claude/CLAUDE.md，读不到就加 ~/.grok/rules/个人判断.md。
+"目标" = ["~/.claude/CLAUDE.md", "~/.codex/AGENTS.md"]
+
+["收割"]
+# 收割时去哪里找你说过的话。按你自己的工具和习惯增删（支持 * 通配）。
+"来源" = [
+  "~/.codex/memories/raw_memories.md",        # Codex 自动记下的"你说了 X → 以后 Y"
+  "~/.claude/projects/*/memory/*.md",         # Claude Code 的项目记忆
+  "~/Agent.md",                               # 你手写的全局规则（如果有）
+]
