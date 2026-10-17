@@ -130,4 +130,9 @@ SKILL.md              Claude Code 技能说明（Agent 照这个做）
 scripts/              核对原话 / 候选箱 / 应用标注 / 一页纸 / 发布 / 猜中统计 / 测试
 examples/示例库/      虚构的示例判断库
 docs/设计依据.md      调研结论和来源
+LICENSE               MIT 许可证
 ```
+
+## 许可证
+
+[MIT](LICENSE)。可以自由使用、修改、分发，保留版权声明即可。
